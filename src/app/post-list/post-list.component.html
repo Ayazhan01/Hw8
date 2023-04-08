@@ -1,0 +1,9 @@
+<div>
+    <button (click)="fetchPosts()">Fetch Posts</button>
+</div>
+
+<ul>
+    <li *ngFor="let post of posts">
+        <app-post [post]="post"></app-post>
+    </li>
+</ul>
